@@ -18,9 +18,9 @@ type:{
     type: String,
     Required: 'Kindly enter the type of Transaction'
   },
-  bankName: {
+  accountid: {
     type: String,
-    Required: 'Kindly enter the name of the Bank'
+    Required: 'Kindly enter the Account ID'
   }
 });
 

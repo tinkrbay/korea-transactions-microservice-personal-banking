@@ -2,7 +2,7 @@ var mongoose = require('mongoose'),
   TransactionDetails = mongoose.model('Transaction');
 
 exports.list_details = function(req, res) {
-  TransactionDetails.find({'emailAddress':req.query.emailAddress,'bankName':req.query.bankName}, function(err, task) {
+  TransactionDetails.find({'emailAddress':req.query.emailAddress,'accountid':req.query.accountid}, function(err, task) {
     if (err)
       res.send(err);
     res.json(task);
